@@ -3,9 +3,7 @@ import { SvgIconTypeMap, ChipProps, TableCellProps } from '@mui/material';
 
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 
-// project imports
 import { FunctionComponent, ReactElement } from 'react';
-import { SnackbarProps } from './snackbar';
 
 export type ArrangementOrder = 'asc' | 'desc' | undefined;
 
@@ -102,10 +100,6 @@ export interface ColorPaletteProps {
   value: string;
 }
 
-export interface DefaultRootStateProps {
-  snackbar: SnackbarProps;
-}
-
 export interface ColorProps {
   readonly [key: string]: string;
 }
@@ -135,14 +129,10 @@ export interface FormInputProps {
   };
 }
 
-/** ---- Common Functions types ---- */
-
 export type StringBoolFunc = (s: string) => boolean;
 export type StringNumFunc = (s: string) => number;
 export type NumbColorFunc = (n: number) => StringColorProps | undefined;
 export type ChangeEventFunc = (e: React.ChangeEvent<HTMLInputElement>) => void;
-
-// amit
 
 export type KeyedObject = {
   [key: string]: string | number | KeyedObject | any;

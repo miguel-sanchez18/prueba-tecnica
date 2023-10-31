@@ -7,8 +7,6 @@ export interface ColorProps {
   readonly [key: string]: string;
 }
 
-// ==============================|| DEFAULT THEME - PALETTE  ||============================== //
-
 const Palette = (navType: PaletteMode, presetColor: string) => {
   let colors: ColorProps;
   switch (presetColor) {
